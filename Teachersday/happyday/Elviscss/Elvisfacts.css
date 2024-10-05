@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-size:cover;
+    background-color: rgb(71, 71, 71);
+    flex-direction: column;
+    display: flex;
+    overflow: hidden;
+    font-family: 'Bebas Neue';
+    background-image: url("storm.gif");
+}
+#line2{
+    text-decoration: underline;
+    color: white;
+}
+.nav {
+    background-color: rgb(71, 71, 71);
+    position: sticky;
+    top: 0;
+    z-index: 4;
+}
+
+.nav ul{
+    
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    padding-right: 300px;
+    z-index: 101;
+}
+
+.nav a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    
+}
+
+.nav a:hover {
+    background-color: rgb(83, 73, 91);
+}
+
+.nav li {
+    float: right;
+    font-size: 30px;
+    padding-right: 30px;
+}
+#output1{
+    display:flex;
+    font-size:60px;
+    white-space:pre-wrap;
+    margin-bottom:40px;
+    color: white;
+}
+.facts{
+    border: 10px solid rgb(28, 32, 32);
+    height: 30%;
+    width: 60%;
+    box-shadow: 10px 10px 10px white;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    position:relative;
+    margin-left:450px;
+    margin-top:50px;
+    margin-bottom:300px;
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }

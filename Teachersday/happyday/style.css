@@ -1,0 +1,160 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+
+}
+
+.container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;  
+    scroll-behavior: smooth;
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*Top Section - Main Title */
+.top_main{
+    margin: 0;
+    padding: 0;
+    background-image: url("spotlight_2.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0);
+}
+
+.top_main h1 {
+    margin-left: 20px;
+    font-size: 200px;
+    color: wheat;
+}
+
+.top_main h3 {
+    font-size: 30px;
+    margin-left: 20px;
+    color: white;
+}
+/*Second Section - Ariel */
+.second_main{
+    margin: 0;
+    padding: 0;
+    background-image: url("Arielcss/splash1.gif");
+    background-size: contain;
+    background-color: rgb(71, 71, 71);
+    position: relative;
+}
+.second_main img {
+    position: absolute;
+    bottom: 0;
+    left: -100px;
+    height: 110vh;
+}
+
+.second_main h2 {
+    font-size: 130px;
+    color: white;
+    position: absolute;
+    top: 10%;
+    right: 3%;
+}
+
+.second_desc {
+    background-color: rgb(117, 117, 117);
+    width: 50%;
+    height: 30%;
+    position: absolute;
+    top: 41%;
+    right: 7%;
+    text-align: center;
+}
+
+
+.desc {
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+
+
+/*Third Section - Elvis */
+
+.third_main{
+    margin: 0;
+    padding: 0;
+    background-image: url("Elviscss/storm.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+}
+.third_main img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100vh;
+}
+
+
+
+.third_main h2 {
+    font-size: 130px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 10%;
+    left: 3%;
+}
+
+.third_desc {
+    background-color: rgb(53, 53, 53);
+    width: 50%;
+    height: 30%;
+    position: absolute;
+    top: 41%;
+    left: 7%;
+    text-align: center;
+}
+
+
+.third_main .desc {
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: rgb(59, 71, 59);
+    color: white;
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    transition: background-color 0.5s;
+}
+
+/*Keyframes*/
+
+img, h2, .second_desc, .third_desc {
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+
+
+@keyframes fade-in {
+    from {scale: .2; opacity: 0;}
+    to {scale: 1; opacity: 1;}
+}
+
+button:hover {
+    background-color: rgb(89, 131, 89);;
+}
